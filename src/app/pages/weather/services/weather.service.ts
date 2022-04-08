@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class WeatherService {
-    private readonly API_URL = environment.openWeather.url;
+    private readonly API_URL = environment.openWeather.url; //https://api.openweathermap.org/data/2.5
 
     constructor(private readonly http: HttpClient) { }
 
@@ -16,6 +16,7 @@ export class WeatherService {
         return this.http.get<WeatherData>(`${this.API_URL}/weather`, { params });
 
     }
+    
     public getWeatherByCoords(coord: Coord): Observable<WeatherData> {
         const params = new HttpParams()
             .set('lat', coord.latitude)

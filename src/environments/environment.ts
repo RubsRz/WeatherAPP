@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   openWeather: {
-    key: '1a8c61f0f54f9eb40100d8184a38a12e',
+    key: 'd0f19f0caccaa38610ae69a253861691',
     url: 'https://api.openweathermap.org/data/2.5'
   }
 };
