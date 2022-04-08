@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { SearchModule } from '@app/components/search/search.module';
 import { WeatherModule } from '@app/pages/weather/weather.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
